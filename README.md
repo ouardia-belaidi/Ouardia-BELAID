@@ -2,6 +2,8 @@
 
 A responsive, dark, technical portfolio built with plain HTML, CSS, and JavaScript. 
 
+Visit portfolio from : https://ouardia-belaidi.github.io/Ouardia-BELAID/
+
 ## Files
 
 - `index.html` — content and page structure
