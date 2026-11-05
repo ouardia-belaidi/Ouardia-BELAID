@@ -37,6 +37,9 @@ h1 { font-size: clamp(42px, 5.2vw, 68px); line-height: 1.13; letter-spacing: -.0
 .hero-meta { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 42px; color: #9babb8; font: 10px var(--mono); }.meta-icon { font-style: normal; color: var(--accent); font-size: 15px; margin-right: 7px; vertical-align: -1px; }
 .hero-visual { height: 475px; max-width: 510px; width: 100%; justify-self: end; position: relative; border: 1px solid rgba(151,190,210,.16); border-radius: 14px; background: radial-gradient(ellipse at 50% 45%, rgba(27,74,83,.23), transparent 60%), linear-gradient(145deg, rgba(19,31,44,.86), rgba(9,15,23,.9)); overflow: hidden; }
 .hero-visual:before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(132,169,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(132,169,255,.05) 1px, transparent 1px); background-size: 35px 35px; mask-image: linear-gradient(to bottom, transparent, black 20%, black 85%, transparent); }
+/* GitHub character in hero section */
+.hero-avatar { display: flex;align-items: center;justify-content: center;padding: 25px;}
+.github-avatar {display: block;width: 100%;height: 100%;max-width: 450px;max-height: 450px;object-fit: contain;object-position: center;}
 .visual-top,.visual-bottom { position: absolute; left: 22px; right: 22px; z-index: 2; display: flex; justify-content: space-between; font: 9px var(--mono); letter-spacing: .06em; color: #7f94a5; }
 .visual-top { top: 20px; }.visual-bottom { bottom: 18px; }.live-indicator { color: var(--accent); }
 .network-lines { position: absolute; width: 100%; height: 100%; inset: 0; color: #67e8d1; z-index: 1; animation: float 8s ease-in-out infinite; }
@@ -74,5 +77,7 @@ h2 { font-size: clamp(34px, 4vw, 49px); line-height: 1.2; letter-spacing: -.06em
   .site-footer { padding-top: 20px; padding-bottom: 20px; flex-wrap: wrap; justify-content: space-between; }.site-footer p { order: 3; width: 100%; }.copyright { margin-left: auto; }
 }
 @media (max-width: 390px) { .section-wrap,.site-header { width: calc(100% - 28px); }.eyebrow { font-size: 8px; }.hero-meta { flex-direction: column; gap: 8px; }.project-content { padding-inline: 17px; }.project-foot { align-items: flex-start; flex-direction: column; }.contact-panel { padding-inline: 19px; } }
-
+@media (max-width: 900px) {.hero-avatar {padding: 18px;}.github-avatar {max-width: 380px;max-height: 380px; }}
+@media (max-width: 700px) {.hero-avatar {width: 100%;height: min(88vw, 430px);padding: 15px;}.github-avatar {width: 100%;height: 100%;max-width: 380px;max-height: 380px;}}
+@media (max-width: 390px) {.hero-avatar {height: 290px;padding: 10px;}}
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
